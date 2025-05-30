@@ -1,8 +1,8 @@
 import joblib
 
-features= [[5.1, 3.5, 1.4, 0.2]]
+features= [[26, 0, 180, 110, 29]]
 
-modelo=joblib.load("modelo.pkl")
+modelo=joblib.load("knn_modelo.pkl")
 
 prediccion = modelo.predict(features)
 print("Prediccion:", prediccion[0])
